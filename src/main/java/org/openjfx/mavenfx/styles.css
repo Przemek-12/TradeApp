@@ -1,0 +1,30 @@
+*{
+	
+}
+
+
+TextField{
+	-fx-box-radius: 5px;
+	-fx-background-color: white;
+}
+
+#Btn{
+	
+}
+
+#menuScene{
+	-fx-background-image: url("stockBack.jpg");
+    -fx-background-repeat: stretch;   
+ 	-fx-background-size: cover;
+    -fx-background-position: center center;
+   
+}
+
+Label{
+	-fx-text-fill:white;
+	-fx-font-size: 14px;
+}
+
+#stockBtnHbox{
+	-fx-background-color: "rgba(224,50,19,0.54)";
+}

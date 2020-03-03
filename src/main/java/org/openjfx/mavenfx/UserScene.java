@@ -30,6 +30,8 @@ public class UserScene extends Scene {
 	public UserScene(FlowPane flowRoot, int x, int y) {
 		super(flowRoot, x, y);
 		
+		this.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+		
 		HBox hbox = new HBox();
 		Button stockBtn = new Button("Stock Exchange");
 		hbox.getChildren().addAll(stockBtn);
@@ -67,7 +69,7 @@ public class UserScene extends Scene {
 		ordersCompleted.getChildren().addAll(historyTabLab, historyTable);
 		
 		
-		
+		flowRoot.setId("userScene");
 		flowRoot.setOrientation(Orientation.HORIZONTAL);
 		flowRoot.setAlignment(Pos.TOP_CENTER);
 		flowRoot.getChildren().addAll(hbox,stockBox,ordersCompleted);

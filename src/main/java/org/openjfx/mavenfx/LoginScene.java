@@ -41,7 +41,7 @@ public class LoginScene extends Scene{
 		gridRoot.addRow(4, loginBtn, registerBtn);
 		gridRoot.addRow(5, connection);
 		gridRoot.setAlignment(Pos.CENTER);
-		
+		gridRoot.setId("loginScene");
 		
 		registerBtn.setOnAction(event->{
 			App.stage.setScene(new SceneSetter().setRegisterScene());

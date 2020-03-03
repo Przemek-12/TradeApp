@@ -42,7 +42,7 @@ public class RegisterScene extends Scene{
 		gridRoot.addRow(4, valid);
 		gridRoot.addRow(5, submitBtn);
 		gridRoot.setAlignment(Pos.CENTER);
-		
+		gridRoot.setId("registerScene");
 		
 		submitBtn.setOnAction(event->{
 			try {

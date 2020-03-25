@@ -53,7 +53,7 @@ public class URLRequest {
 	                //jobj contains meta data object and daily object
 	                JSONObject jobj1 = (JSONObject) jobj.get("Meta Data");
 	                jobj2 = (JSONObject) jobj.get("Time Series (Daily)");
-	                
+
 	                // jobj3 contains data from last refreshed date
 	                JSONObject jobj3 = (JSONObject) jobj2.get(jobj1.get("3. Last Refreshed"));
 	                
@@ -64,7 +64,7 @@ public class URLRequest {
 	                // set cannot be sorted so data must be put into arraylist
 					Set<String> values = jobj2.keySet();
 	                Iterator<String> iterator = values.iterator();
-					keys = new ArrayList();
+					keys = new ArrayList<String>();
 	                
 	                while(iterator.hasNext()){
 	                    keys.add(iterator.next());
@@ -84,7 +84,12 @@ public class URLRequest {
 	}
 	
 	public void setChartData() {
+		try {
 		ListsPane.chart.setData(StockChart.setSeries(keys, jobj2));
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

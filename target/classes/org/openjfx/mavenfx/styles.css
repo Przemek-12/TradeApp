@@ -16,8 +16,28 @@ TextField{
 	-fx-background-image: url("stockBack.jpg");
     -fx-background-repeat: stretch;   
  	-fx-background-size: cover;
-    -fx-background-position: center center;
-   
+    -fx-background-position: center center; 
+}
+
+#loginScene{
+	-fx-background-image: url("stockBack.jpg");
+    -fx-background-repeat: stretch;   
+ 	-fx-background-size: cover;
+    -fx-background-position: center center; 
+}
+
+#userScene{
+	-fx-background-image: url("stockBack.jpg");
+    -fx-background-repeat: stretch;   
+ 	-fx-background-size: cover;
+    -fx-background-position: center center; 
+}
+
+#registerScene{
+	-fx-background-image: url("stockBack.jpg");
+    -fx-background-repeat: stretch;   
+ 	-fx-background-size: cover;
+    -fx-background-position: center center; 
 }
 
 Label{
